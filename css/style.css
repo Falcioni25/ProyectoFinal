@@ -1,0 +1,236 @@
+/*reset*/
+/*colores #0E3351 (azul) #547480 (az/clarito) #D27355 (naranja) */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+   font-family: "Lato"; 
+}
+
+.area{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6.0fr 0.5fr 0.3fr ;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "section section"
+    "footer footer";
+    
+}
+
+                    /*Estilos del Header*/
+                   
+header{
+    grid-area: header;
+    background-color: #D27355;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+h1{
+    color: #C2C2C2;
+    font-size: 3.5rem;
+    filter:drop-shadow(3px 3px 3px #547480)
+}
+
+.nav-links{
+    list-style: none;
+    margin-right: 10px;
+}
+.nav-links-responsive{
+    display: none;
+}
+.nav-links li{
+    display: inline-block;
+    
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-family:"Fahkwang",sans-serif;
+    margin: 3px;
+    color: #0B3463;
+    font-weight: bold;
+    transition: 0.7s;    
+}
+.nav-links li a:hover{
+    color:#C2C2C2;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #547480;
+}
+
+.header-responsive{
+    display: none;
+}
+                    /*Estilos del Main*/
+main{
+    padding-top: 10px;
+    grid-area: main;
+    display: grid;
+    background-color: #547480;
+    justify-content: center;
+}
+
+p{
+    padding-left: 15px;
+    padding-bottom: 40px;
+}
+
+.main-quienesSomos{
+    background-image: url(../img/austin-distel-gUIJ0YszPig-azul.jpg);
+    background-size: cover;
+}
+.main-quienes-somos-responsive{
+    display: none;
+}
+                    /*estilos del aside*/
+aside{
+    grid-area: aside;
+}
+.aside-home{
+    display: grid;
+    background-image: url(../img/business-people-meeting\ celeste.jpg);
+    background-size: cover;
+}
+.aside-QuienesSomos{
+    display: grid;
+    justify-items: center;
+    background-color: #547480
+}
+.aside-QuienesSomos h2{
+    padding-top: 10px;
+    text-align: center;
+}
+                    /*estilos del section*/
+section{
+    
+    grid-area: section;
+    background-color: #c2c2c2;
+    width:100%;
+}
+section ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 5px 0 0 5px;
+}
+section ul li a i:hover{
+    transform: scale(1.5);
+}
+
+                /*estilos del footer*/
+footer{
+    grid-area: footer;
+    text-align: center;
+    font-family:"Fahkwang",sans-serif;
+    font-weight: bold;
+    background-color: #D27355;
+}
+
+
+
+
+                    /*------------media queries------------*/
+
+
+@media screen and (max-width:621px){
+    body{
+   
+        font-family: "Lato";
+        font-weight: bold; 
+     }
+    .area{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    header{
+        display: none;  
+    }
+    .header-responsive{
+        background: linear-gradient(to right, #0E3351,#D27355);
+        display: flex;
+        width: 100%;
+    }
+    .nav-links li{
+        display:block;
+        margin-left:260px;
+    }
+    .h2-responsive{
+        color: #C2C2C2;
+        font-size: 1.5rem;
+        filter:drop-shadow(3px 3px 3px #547480);
+        padding:19px 0 0 19px;
+        align-self: center;
+    }
+            /*Estilos del Home Mobile*/   
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 700px;
+        background-image: url(../img/business-people-meeting\ celeste.jpg);
+        background-size: cover;
+        align-content: center;
+    }
+                /*Estilos de Quienes Somos Mobile*/
+    .aside-QuienesSomos{
+        display: none;
+    }
+    .main-quienesSomos{
+        display: none;
+    }
+    .main-quienes-somos-responsive{
+        display: flex;
+        background-color: #547480;
+    }
+    .cards-quienes-somos-responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+    }
+    .main-quienes-somos-responsive img{
+        width: 100%;
+        padding: 5px;
+    }
+    .p-quienes-somos-responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        padding: 5px;
+
+    }
+   
+                /*Estilos de Redes Mobile*/
+    .facebook{
+        color:#3b5998;
+    }
+    .instagram{
+        color: #bc2a8d ;
+    }
+    .twitter{
+        color:#00acee
+    }
+    .linkedin{
+        color:#0e76a8
+    }
+    .whatsapp{
+        color:#25D366
+    }
+    .youtube{
+        color: #c4302b;
+    }
+}
