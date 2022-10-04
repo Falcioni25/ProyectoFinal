@@ -1,12 +1,14 @@
+@import "utilities/variables";
+@import "utilities/listas";
 @import "utilities/reset";
+@import "utilities/mixin";
+@import "utilities/extend";
 @import "partials/home";
 @import "partials/quienes-somos";
 @import "partials/servicios";
 @import "partials/eventos";
 @import "partials/contacto";
-@import "utilities/variables";
-@import "utilities/listas";
-@import "utilities/mixin";
+
 
 
 body{ 
@@ -26,7 +28,9 @@ body{
 }
 /*Estilos del Header*/
 header{
+    position: relative;
     grid-area: header;
+    width: 100%;
     display: grid;
     background-color: nth($colores,3);
     .logo{
@@ -36,13 +40,14 @@ header{
         margin-top: 10px;
         border-radius: 50% 120%;
     }
-    
+   
     .navbar{
         .container-fluid{
             .collapse{
                 .nav-item{
                     .nav-link:hover{
                         color: nth($colores,1);
+                        text-shadow: 1px 1px 1px nth($colores,4 );
                     }            
                 }
             }
@@ -54,7 +59,6 @@ header{
 
 /*Estilos del Main*/
 main{
-    
     padding-top: 10px;
     grid-area: main;
     display: grid;

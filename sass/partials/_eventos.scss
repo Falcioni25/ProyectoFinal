@@ -1,7 +1,6 @@
 /*Estilos de Eventos*/
 .area-dos{
     display: grid;
-    
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 6.0fr 0.5fr 0.3fr ;
@@ -22,8 +21,8 @@ main{
     
     h1{
         text-align: center;
-        font-size: 2rem;
-        text-shadow: 1px 1px 1px;
+        font-size: $medida-titulo;
+        text-shadow:$shadow;
     }
 }
 section{
@@ -33,15 +32,16 @@ footer{
     grid-area: footer;
 }
 .main-eventos{
+    justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
-    background-color: #547480;
+    background-color: nth ($colores,2);
     div{
 
         p{
-            color:#c2c2c2;
+            color:nth($colores , 1 );
             text-align: center;
-            text-shadow: 1px 1px 0.5px black;
+            text-shadow: $shadow black;
             font-style: "Lato";
             padding: 0;
         }
@@ -58,16 +58,19 @@ footer{
     }    
 }
 }
+/*estilos de Eventos Mobile*/
 @media screen and (max-width:600px){
 
 .area-dos{
-    display: flex;
-    flex-direction: column;
+    @include display-flex;
     .main-eventos{
         justify-content: center;
         div{
             img{
             align-content: center;
+            &:hover{
+                transform: none;
+            }
         }
     }
 }

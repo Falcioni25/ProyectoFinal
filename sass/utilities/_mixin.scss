@@ -1,4 +1,9 @@
 @mixin display-mobile{
     display: flex;
     flex-direction: column;
+    align-content: center;
+}
+@mixin display-flex{
+    display: flex;
+    flex-direction: column;
 }

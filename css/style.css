@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box; }
 
+.aside-home, .main-quienesSomos, .aside-servicios {
+  display: grid;
+  background-size: cover; }
+
 /*Estilos del Home*/
 .main-home {
   background-color: #547480; }
@@ -14,19 +18,17 @@
     text-shadow: 1px 1px 1px; }
 
 .aside-home {
-  display: grid;
-  background-image: url(../img/business-people-meeting-celeste.jpg);
-  background-size: cover; }
+  background-image: url(../img/business-people-meeting-celeste.jpg); }
 
 /*Estilos del Home Mobile*/
 @media screen and (max-width: 600px) {
   .main-home {
     display: flex;
     flex-direction: column;
+    align-content: center;
     flex-basis: 700px;
     background-image: url(../img/business-people-meeting-celeste.jpg);
-    background-size: cover;
-    align-content: center; } }
+    background-size: cover; } }
 
 /*Estilos de Redes Mobile*/
 .facebook {
@@ -49,8 +51,7 @@
 
 /*Estilos de quienes somos*/
 .main-quienesSomos {
-  background-image: url(../img/austin-distel-gUIJ0YszPig-azul.jpg);
-  background-size: cover; }
+  background-image: url(../img/austin-distel-gUIJ0YszPig-azul.jpg); }
 
 .main-quienes-somos-responsive {
   display: none; }
@@ -74,7 +75,7 @@
   .main-quienes-somos-responsive {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     background-color: #547480; }
     .main-quienes-somos-responsive img {
       width: 100%;
@@ -82,7 +83,7 @@
     .main-quienes-somos-responsive .cards-quienes-somos-responsive {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-content: center; }
       .main-quienes-somos-responsive .cards-quienes-somos-responsive p {
         padding: 15px; }
       .main-quienes-somos-responsive .cards-quienes-somos-responsive .card {
@@ -115,8 +116,8 @@ section ul li a i {
   flex-shrink: 1;
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  align-items: center; }
+  align-content: center;
+  font-size: 1rem; }
   .main-servicios h1 {
     text-align: center;
     font-size: 2rem;
@@ -126,21 +127,19 @@ section ul li a i {
     margin-right: 380px; }
 
 .aside-servicios {
-  display: flex;
   background-image: url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
-  background-size: cover;
   flex-shrink: 2; }
 
-/*Media queries Servicios*/
+/*Estilo de  Servicios Mobile*/
 @media screen and (max-width: 600px) {
   .main-servicios {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     flex-basis: 700px;
     background-color: #547480; }
     .main-servicios h1, .main-servicios li {
-      text-shadow: 1px 1px 3px black;
+      text-shadow: 1px 1px 1px black;
       color: #c2c2c2; } }
 
 /*Estilos de Eventos*/
@@ -170,13 +169,14 @@ footer {
   grid-area: footer; }
 
 .main-eventos {
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
-  background-color: #547480; }
+  background-color: nth #c2c2c2, #547480, #D27355, #1f1b1b, 2; }
   .main-eventos div p {
     color: #c2c2c2;
     text-align: center;
-    text-shadow: 1px 1px 0.5px black;
+    text-shadow: 1px 1px 1px black;
     font-style: "Lato";
     padding: 0; }
   .main-eventos img {
@@ -188,6 +188,7 @@ footer {
       transform: scale(1.1);
       transition: 0.3s; }
 
+/*estilos de Eventos Mobile*/
 @media screen and (max-width: 600px) {
   .area-dos {
     display: flex;
@@ -195,7 +196,9 @@ footer {
     .area-dos .main-eventos {
       justify-content: center; }
       .area-dos .main-eventos div img {
-        align-content: center; } }
+        align-content: center; }
+        .area-dos .main-eventos div img:hover {
+          transform: none; } }
 
 /*Estilos de Contacto*/
 .area .main-contacto {
@@ -203,31 +206,38 @@ footer {
   display: flex;
   flex-direction: column;
   align-content: center;
-  flex-shrink: 1; }
+  flex-shrink: 1;
+  background-image: url(../../img/fondotexturado.jpg); }
   .area .main-contacto h1 {
+    color: #c2c2c2;
     font-size: 2rem;
     text-shadow: 1px 1px 1px;
     align-self: center;
     height: 2rem; }
   .area .main-contacto form {
+    color: #c2c2c2;
     padding: 1rem;
     margin-top: 3rem;
     margin-left: 2rem; }
 
 .area .mapa {
+  overflow: hidden;
   grid-area: aside;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 2;
-  padding: auto; }
+  flex-shrink: 2; }
 
+/*Estilo de Contacto Mobile*/
 @media screen and (max-width: 600px) {
-  .area {
+  .main-contacto {
     display: flex;
-    flex-direction: column; }
-    .area .main-contacto {
+    flex-direction: column;
+    align-content: center; }
+    .main-contacto form {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      align-content: center; }
+  .mapa {
+    overflow: hidden;
+    background-color: #c2c2c2; } }
 
 body {
   font-family: "Lato"; }
@@ -242,7 +252,9 @@ body {
 
 /*Estilos del Header*/
 header {
+  position: relative;
   grid-area: header;
+  width: 100%;
   display: grid;
   background-color: #D27355; }
   header .logo {
@@ -252,7 +264,8 @@ header {
     margin-top: 10px;
     border-radius: 50% 120%; }
   header .navbar .container-fluid .collapse .nav-item .nav-link:hover {
-    color: #c2c2c2; }
+    color: #c2c2c2;
+    text-shadow: 1px 1px 1px #1f1b1b; }
 
 /*Estilos del Main*/
 main {
@@ -336,6 +349,7 @@ footer {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    align-content: center;
     align-content: center; }
   section ul li a i {
     animation: none;

@@ -2,18 +2,18 @@
 .area{
 .main-contacto{
     grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    @include display-mobile;
     flex-shrink: 1;
+    background-image: url(../../img/fondotexturado.jpg);
     h1{
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px;
+    color:nth($colores, 1 );    
+    font-size: $medida-titulo;
+    text-shadow:$shadow;
     align-self:center;
-    height: 2rem;
-     
+    height: 2rem;     
 }
     form{
+        color:nth($colores, 1 );  
         padding: 1rem;
         margin-top: 3rem;
         margin-left: 2rem;
@@ -21,26 +21,21 @@
 }
 
 .mapa{
+    overflow:hidden;
     grid-area: aside;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 2;
-    padding: auto;
+    flex-shrink: 2; 
 }
 }
-
-@media screen and (max-width: 600px){
-
-.area{    
-    display: flex;
-    flex-direction: column;
+/*Estilo de Contacto Mobile*/
+@media screen and (max-width:600px){
     .main-contacto{
-        display: flex;
-        flex-direction: column;
+        @include display-mobile;
+        form{
+            @include display-mobile;
+        }
     }
-    .mapa{
-    
-
-}   
-}      
+   .mapa{
+    overflow:hidden;
+    background-color: nth($colores, 1 );
+   } 
 }
