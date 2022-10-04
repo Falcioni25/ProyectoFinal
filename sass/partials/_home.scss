@@ -1,0 +1,52 @@
+/*Estilos del Home*/
+.main-home{
+    background-color: #547480;
+    .container-fluid{
+        .row{
+            margin-top: 5rem;
+        }
+        h1{
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: 1px 1px 1px;
+        }
+}
+}
+.aside-home{
+    display: grid;
+    background-image: url(../img/business-people-meeting-celeste.jpg);
+    background-size: cover;
+}
+
+
+/*Estilos del Home Mobile*/
+@media screen and (max-width:600px){ 
+.main-home{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 700px;
+    background-image: url(../img/business-people-meeting-celeste.jpg);
+    background-size: cover;
+    align-content: center;
+}
+}
+/*Estilos de Redes Mobile*/
+              
+    .facebook{
+        color:#3b5998;
+    }
+    .instagram{
+        color: #bc2a8d ;
+    }
+    .twitter{
+        color:#00acee
+    }
+    .linkedin{
+        color:#0e76a8
+    }
+    .whatsapp{
+        color:#25D366
+    }
+    .youtube{
+        color: #c4302b;
+    }

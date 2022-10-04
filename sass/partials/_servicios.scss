@@ -1,0 +1,47 @@
+
+/*estilos de servicios*/
+  
+.main-servicios{
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px;
+    }
+    ul li{
+        padding: 0.2rem;
+        margin-right: 380px;
+        
+    }
+}
+
+.aside-servicios{
+    display: flex;
+    background-image:url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
+    background-size: cover;
+    flex-shrink: 2;
+
+}
+
+
+/*Media queries Servicios*/
+@media screen and (max-width:600px){
+.main-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 700px;
+    background-color: #547480;
+
+    h1,li{
+        text-shadow: 1px 1px 3px black;
+        color: #c2c2c2;
+
+    }   
+    }
+}
+

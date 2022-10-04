@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(..//img/fondo\ azul\ texturado.png);
+    font-family:"Lato", sans-serif;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.titulo{
+    margin: 15px 10px 0 10px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-image:url(../img/fondo\ liso\ naranja.png);
+    display: flex;   
+}
+.menu{
+    margin-top: 30px;
+    margin-left: 650px;
+    
+
+}
+
+
+header nav ul li{
+    display: inline-block;
+    
+    
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    margin-left: 3px;
+    background: linear-gradient(to right,transparent,#0B3463);
+    font-family: 'Fahkwang', sans-serif;
+    
+    
+    
+}
+header nav ul li a:hover{
+    color: #0E3351;
+    transform:scale(1.1);
+    transition: 0.5s;
+    
+}    
+.item{
+    color: #C2C2C2;
+    font-family: 'Fahkwang', sans-serif;
+}
+.img-pagina-index{
+    width: 100%;
+
+    
+}
+aside p{
+    font-size: 25px;
+}
+  
+
+
+
+
+
+
+
+.redes-container__ul{
+    display: flex;
+    
+    justify-content:space-around;
+    background-color: #C2C2C2;
+}
+.redes-container__ul a{
+    color:#0B3463
+}
+.redes-container__ul{
+    animation-name: redes;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+@keyframes redes {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+    
+}
+.facebook:hover{
+    color:#1f7be3;
+    transform: scale(1.3);
+    
+}
+.instagram:hover{
+    color: rgb(236, 61, 178);
+    transform: scale(1.3);
+}
+.twitter:hover{
+    color: rgb(9, 217, 245);
+    transform: scale(1.3);
+}
+.linkedin:hover{
+    color:#1f7be3;
+    transform: scale(1.3);
+}
+.whatsapp:hover{
+    color:#57ec5c;
+    transform: scale(1.3);
+}
+.youtube:hover{
+    color:#ef3c3c;
+    transform: scale(1.3);
+}
+.main-quienes-somos{
+    display: flex;
+}
+
+.div-quienes-somos{
+    font-size: 20px;
+    font-family:"Lato" sans-serif;
+    display: block;
+    width: 50%;
+    margin-left: 5px;
+    color: #C2C2C2;
+}
+
+.main-quienes-somos__img{
+    width: 40%;
+    height: 600px;
+    margin-left: 100px;
+    margin-right: 5px;
+}
+.videoquienessomos{
+    margin: 10px 50px;
+
+}
+.main-eventos{
+    display: flex;
+}
+.main-eventos img{
+    width: 325px;
+    height: 250px;
+    border: 1px solid #c2c2c2;
+    margin: 5px 5px;
+}
+.main-eventos img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.main-contacto{
+    display: flex;
+    background-image:url(img/portada.jpg);
+    background-size: cover;
+}
+.imagen-contacto{
+    width: 400 px;
+    height: 400px;
+}
+.servicios{
+    padding: 5px;
+    height: 100%;
+    color:#0B3463;
+    font-size: 20px;
+    font-family: "Lato" sans-serif;
+    display: inline-block;
+    background-image: url(../img/fondo\ texturado\ \(3\).png);
+}
+.seleccionPersonal img{
+    width: 500px;
+    height: 300px;
+    margin-left: 800px;
+    padding-top: 3px;
+}
+.body-contacto{
+    background-image: url(../img/fondo-contacto.png);
+}
+.main-contacto{
+    height: 500px;
+    font-family: "Lato";
+}
+fieldset{
+    padding: 10px;
+    width: 550px;
+    height:400 px;
+    color: #c2c2c2;
+    background-color: #0B3463;
+    margin: 40px 0 0 5px;
+}
+#obligatorio-formulario{
+    color: red;
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+
+}
+h4 p{
+    color: aliceblue;
+}
+
+
+

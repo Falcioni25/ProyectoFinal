@@ -1,0 +1,77 @@
+/*Estilos de Eventos*/
+.area-dos{
+    display: grid;
+    
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 6.0fr 0.5fr 0.3fr ;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "footer footer";
+}
+
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px;
+    }
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+.main-eventos{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #547480;
+    div{
+
+        p{
+            color:#c2c2c2;
+            text-align: center;
+            text-shadow: 1px 1px 0.5px black;
+            font-style: "Lato";
+            padding: 0;
+        }
+    }
+
+    img{
+    width: 325px;
+    height: 200px;
+    border: 1px solid #c2c2c2;
+    margin: 5px 5px;
+        &:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    }    
+}
+}
+@media screen and (max-width:600px){
+
+.area-dos{
+    display: flex;
+    flex-direction: column;
+    .main-eventos{
+        justify-content: center;
+        div{
+            img{
+            align-content: center;
+        }
+    }
+}
+}
+}
+    
+

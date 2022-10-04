@@ -1,0 +1,75 @@
+
+/*Estilos de quienes somos*/
+.main-quienesSomos{
+    background-image: url(../img/austin-distel-gUIJ0YszPig-azul.jpg);
+    background-size: cover;
+}
+.main-quienes-somos-responsive{
+    display: none;
+}
+.aside-QuienesSomos{
+    display: grid;
+    justify-items: center;
+    background-color: #547480;
+    h1{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px;
+    
+    }
+}
+/*Estilos de Quienes Somos Mobile*/
+@media screen and (max-width:600px){
+    .aside-QuienesSomos{
+        display: none;
+    }
+    .main-quienesSomos{
+        display: none;
+    }
+    .main-quienes-somos-responsive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #547480;
+        img{
+            width: 100%;
+            padding: 5px;
+        }
+        .cards-quienes-somos-responsive{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            p{
+                padding: 15px;
+            }
+            .card{
+                margin: 25px 0px;
+            }   
+        } 
+    }
+
+}
+/*Estilos de Redes Mobile*/
+section ul li a i{
+    animation:none;                   
+    }            
+    .facebook{
+        color:#3b5998;
+    }
+    .instagram{
+        color: #bc2a8d ;
+    }
+    .twitter{
+        color:#00acee
+    }
+    .linkedin{
+        color:#0e76a8
+    }
+    .whatsapp{
+        color:#25D366
+    }
+    .youtube{
+        color: #c4302b;
+    }
+

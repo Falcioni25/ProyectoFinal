@@ -1,236 +1,356 @@
-/*reset*/
-/*colores #0E3351 (azul) #547480 (az/clarito) #D27355 (naranja) */
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-   
-   font-family: "Lato"; 
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-.area{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 6.0fr 0.5fr 0.3fr ;
-    grid-template-areas: 
-    "header header"
-    "main aside"
-    "section section"
-    "footer footer";
-    
-}
+/*Estilos del Home*/
+.main-home {
+  background-color: #547480; }
+  .main-home .container-fluid .row {
+    margin-top: 5rem; }
+  .main-home .container-fluid h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px; }
 
-                    /*Estilos del Header*/
-                   
-header{
-    grid-area: header;
-    background-color: #D27355;
+.aside-home {
+  display: grid;
+  background-image: url(../img/business-people-meeting-celeste.jpg);
+  background-size: cover; }
+
+/*Estilos del Home Mobile*/
+@media screen and (max-width: 600px) {
+  .main-home {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.logo{
+    flex-direction: column;
+    flex-basis: 700px;
+    background-image: url(../img/business-people-meeting-celeste.jpg);
+    background-size: cover;
+    align-content: center; } }
+
+/*Estilos de Redes Mobile*/
+.facebook {
+  color: #3b5998; }
+
+.instagram {
+  color: #bc2a8d; }
+
+.twitter {
+  color: #00acee; }
+
+.linkedin {
+  color: #0e76a8; }
+
+.whatsapp {
+  color: #25D366; }
+
+.youtube {
+  color: #c4302b; }
+
+/*Estilos de quienes somos*/
+.main-quienesSomos {
+  background-image: url(../img/austin-distel-gUIJ0YszPig-azul.jpg);
+  background-size: cover; }
+
+.main-quienes-somos-responsive {
+  display: none; }
+
+.aside-QuienesSomos {
+  display: grid;
+  justify-items: center;
+  background-color: #547480; }
+  .aside-QuienesSomos h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px; }
+
+/*Estilos de Quienes Somos Mobile*/
+@media screen and (max-width: 600px) {
+  .aside-QuienesSomos {
+    display: none; }
+  .main-quienesSomos {
+    display: none; }
+  .main-quienes-somos-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #547480; }
+    .main-quienes-somos-responsive img {
+      width: 100%;
+      padding: 5px; }
+    .main-quienes-somos-responsive .cards-quienes-somos-responsive {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-quienes-somos-responsive .cards-quienes-somos-responsive p {
+        padding: 15px; }
+      .main-quienes-somos-responsive .cards-quienes-somos-responsive .card {
+        margin: 25px 0px; } }
+
+/*Estilos de Redes Mobile*/
+section ul li a i {
+  animation: none; }
+
+.facebook {
+  color: #3b5998; }
+
+.instagram {
+  color: #bc2a8d; }
+
+.twitter {
+  color: #00acee; }
+
+.linkedin {
+  color: #0e76a8; }
+
+.whatsapp {
+  color: #25D366; }
+
+.youtube {
+  color: #c4302b; }
+
+/*estilos de servicios*/
+.main-servicios {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  align-items: center; }
+  .main-servicios h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px; }
+  .main-servicios ul li {
+    padding: 0.2rem;
+    margin-right: 380px; }
+
+.aside-servicios {
+  display: flex;
+  background-image: url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
+  background-size: cover;
+  flex-shrink: 2; }
+
+/*Media queries Servicios*/
+@media screen and (max-width: 600px) {
+  .main-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 700px;
+    background-color: #547480; }
+    .main-servicios h1, .main-servicios li {
+      text-shadow: 1px 1px 3px black;
+      color: #c2c2c2; } }
+
+/*Estilos de Eventos*/
+.area-dos {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 6.0fr 0.5fr 0.3fr;
+  grid-template-areas: "header header" "main main" "section section" "footer footer"; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-wrap: wrap; }
+  main h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px; }
+
+section {
+  grid-area: section; }
+
+footer {
+  grid-area: footer; }
+
+.main-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #547480; }
+  .main-eventos div p {
+    color: #c2c2c2;
+    text-align: center;
+    text-shadow: 1px 1px 0.5px black;
+    font-style: "Lato";
+    padding: 0; }
+  .main-eventos img {
+    width: 325px;
+    height: 200px;
+    border: 1px solid #c2c2c2;
+    margin: 5px 5px; }
+    .main-eventos img:hover {
+      transform: scale(1.1);
+      transition: 0.3s; }
+
+@media screen and (max-width: 600px) {
+  .area-dos {
+    display: flex;
+    flex-direction: column; }
+    .area-dos .main-eventos {
+      justify-content: center; }
+      .area-dos .main-eventos div img {
+        align-content: center; } }
+
+/*Estilos de Contacto*/
+.area .main-contacto {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-shrink: 1; }
+  .area .main-contacto h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px;
+    align-self: center;
+    height: 2rem; }
+  .area .main-contacto form {
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 2rem; }
+
+.area .mapa {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 2;
+  padding: auto; }
+
+@media screen and (max-width: 600px) {
+  .area {
+    display: flex;
+    flex-direction: column; }
+    .area .main-contacto {
+      display: flex;
+      flex-direction: column; } }
+
+body {
+  font-family: "Lato"; }
+
+.area {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 6.0fr 0.5fr 0.3fr;
+  grid-template-areas: "header header" "main aside" "section section" "footer footer"; }
+
+/*Estilos del Header*/
+header {
+  grid-area: header;
+  display: grid;
+  background-color: #D27355; }
+  header .logo {
     width: 70px;
     height: 70px;
     margin-left: 10px;
     margin-top: 10px;
-    border-radius: 50%;
-}
-h1{
-    color: #C2C2C2;
-    font-size: 3.5rem;
-    filter:drop-shadow(3px 3px 3px #547480)
-}
+    border-radius: 50% 120%; }
+  header .navbar .container-fluid .collapse .nav-item .nav-link:hover {
+    color: #c2c2c2; }
 
-.nav-links{
-    list-style: none;
-    margin-right: 10px;
-}
-.nav-links-responsive{
-    display: none;
-}
-.nav-links li{
-    display: inline-block;
-    
-}
-.nav-links li a{
-    text-decoration: none;
-    font-size: 17px;
-    font-family:"Fahkwang",sans-serif;
-    margin: 3px;
-    color: #0B3463;
-    font-weight: bold;
-    transition: 0.7s;    
-}
-.nav-links li a:hover{
-    color:#C2C2C2;
-    border-radius: 5px 5px 5px 5px;
-    background-color: #547480;
-}
-
-.header-responsive{
-    display: none;
-}
-                    /*Estilos del Main*/
-main{
-    padding-top: 10px;
-    grid-area: main;
-    display: grid;
-    background-color: #547480;
-    justify-content: center;
-}
-
-p{
+/*Estilos del Main*/
+main {
+  padding-top: 10px;
+  grid-area: main;
+  display: grid;
+  background-color: #547480;
+  justify-content: center; }
+  main p {
     padding-left: 15px;
-    padding-bottom: 40px;
-}
+    padding-bottom: 40px; }
 
-.main-quienesSomos{
-    background-image: url(../img/austin-distel-gUIJ0YszPig-azul.jpg);
-    background-size: cover;
-}
-.main-quienes-somos-responsive{
-    display: none;
-}
-                    /*estilos del aside*/
-aside{
-    grid-area: aside;
-}
-.aside-home{
-    display: grid;
-    background-image: url(../img/business-people-meeting\ celeste.jpg);
-    background-size: cover;
-}
-.aside-QuienesSomos{
-    display: grid;
-    justify-items: center;
-    background-color: #547480
-}
-.aside-QuienesSomos h2{
-    padding-top: 10px;
-    text-align: center;
-}
-                    /*estilos del section*/
-section{
-    
-    grid-area: section;
-    background-color: #c2c2c2;
-    width:100%;
-}
-section ul{
+/*estilos del aside*/
+aside {
+  display: grid;
+  grid-area: aside; }
+
+/*estilos del section*/
+section {
+  grid-area: section;
+  background-color: #c2c2c2;
+  width: 100%;
+  height: 50px; }
+  section ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    padding: 5px 0 0 5px;
-}
-section ul li a i:hover{
-    transform: scale(1.5);
-}
+    padding: 5px 0 0 5px; }
+    section ul li a i {
+      height: 30px;
+      width: 50px;
+      padding: 10px 0px;
+      animation: 2s infinite agrandar; }
+    section ul .facebook {
+      color: #3b5998;
+      font-size: 25px; }
+    section ul .instagram {
+      color: #bc2a8d;
+      font-size: 25px; }
+    section ul .twitter {
+      color: #00acee;
+      font-size: 25px; }
+    section ul .linkedin {
+      color: #0e76a8;
+      font-size: 25px; }
+    section ul .whatsapp {
+      color: #25D366;
+      font-size: 25px; }
+    section ul .youtube {
+      color: #c4302b;
+      font-size: 25px; }
 
-                /*estilos del footer*/
-footer{
-    grid-area: footer;
-    text-align: center;
-    font-family:"Fahkwang",sans-serif;
+@keyframes agrandar {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(1.2); }
+  75% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+/*estilos del footer*/
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #D27355; }
+  footer h4 {
+    font-family: "Fahkwang",sans-serif;
     font-weight: bold;
-    background-color: #D27355;
-}
+    font-size: 15px; }
 
-
-
-
-                    /*------------media queries------------*/
-
-
-@media screen and (max-width:621px){
-    body{
-   
-        font-family: "Lato";
-        font-weight: bold; 
-     }
-    .area{
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-    header{
-        display: none;  
-    }
-    .header-responsive{
-        background: linear-gradient(to right, #0E3351,#D27355);
-        display: flex;
-        width: 100%;
-    }
-    .nav-links li{
-        display:block;
-        margin-left:260px;
-    }
-    .h2-responsive{
-        color: #C2C2C2;
-        font-size: 1.5rem;
-        filter:drop-shadow(3px 3px 3px #547480);
-        padding:19px 0 0 19px;
-        align-self: center;
-    }
-            /*Estilos del Home Mobile*/   
-    main{
-        display: flex;
-        flex-direction: column;
-        flex-basis: 700px;
-        background-image: url(../img/business-people-meeting\ celeste.jpg);
-        background-size: cover;
-        align-content: center;
-    }
-                /*Estilos de Quienes Somos Mobile*/
-    .aside-QuienesSomos{
-        display: none;
-    }
-    .main-quienesSomos{
-        display: none;
-    }
-    .main-quienes-somos-responsive{
-        display: flex;
-        background-color: #547480;
-    }
-    .cards-quienes-somos-responsive{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around ;
-    }
-    .main-quienes-somos-responsive img{
-        width: 100%;
-        padding: 5px;
-    }
-    .p-quienes-somos-responsive{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        padding: 5px;
-
-    }
-   
-                /*Estilos de Redes Mobile*/
-    .facebook{
-        color:#3b5998;
-    }
-    .instagram{
-        color: #bc2a8d ;
-    }
-    .twitter{
-        color:#00acee
-    }
-    .linkedin{
-        color:#0e76a8
-    }
-    .whatsapp{
-        color:#25D366
-    }
-    .youtube{
-        color: #c4302b;
-    }
-}
+/*------------media queries------------*/
+@media screen and (max-width: 602px) {
+  body {
+    font-family: "Lato";
+    font-weight: bold; }
+  .area {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+  section ul li a i {
+    animation: none;
+    justify-content: center; }
+  .facebook {
+    color: #3b5998; }
+  .instagram {
+    color: #bc2a8d; }
+  .twitter {
+    color: #00acee; }
+  .linkedin {
+    color: #0e76a8; }
+  .whatsapp {
+    color: #25D366; }
+  .youtube {
+    color: #c4302b; }
+  h4 {
+    font-size: 15px; } }

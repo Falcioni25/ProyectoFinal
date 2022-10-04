@@ -14,67 +14,85 @@
         <title>Contacto</title>
     </head>
 <body>
+  <div class="area">
     <header>
-        <img class="logo" src="img/logo reducido (4).jpg" alt="logo-focus">
-        <h1 class="titulo">focus.gth</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li> <a href="quienes-somos.html">Nosotros</a> </li>
-                <li> <a href="servicios.html"> Servicios</a></li>
-                <li> <a href="eventos.html">Eventos</a> </li>
-                
-            </ul>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img class="logo" src="../img/logo princi (6).jpg" alt="Logo-Focus">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="quienes-somos.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        </header>
-    <main>
-        <h2>Contactanos</h2>
-        <form action="">
+  </header>
+  <main class="main-contacto">
+        <h1>Contactanos</h1>
+        <form>
             <fieldset>
                 <legend>Datos Personales</legend>
                 <div>
-                <label for="Nombre">Nombre</label>
-                <input type="text" name="Nombre" placeholder="Nombre">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" placeholder="Nombre...">
                 </div>
-                <br>
                 <div>
-                <label for="Apellido">Apellido</label>
-                <input type="text" name="Apellido" placeholder="Apellido">
+                <label for="Apellido">Apellido:</label>
+                <input type="text" name="Apellido" placeholder="Apellido...">
                 </div>
-                <br>
                 <div>
                 <label for="Email">E-Mail:</label>
-                <input type="email" name="Email" placeholder="E-mail">
+                <input type="email" name="Email" placeholder="email@ejemplo.com">
                 </div>
-                <br>
                 <div>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Escriba su mensaje"></textarea>
                 </div>
-                <br>
                 <input type="button" value="Enviar">        
             </fieldset>
         </form>
     </main>
 
-    <aside>
-        <h3></h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.090182547085!2d-106.53404388475626!3d35.12942298032677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87189fe2e42a10a7%3A0x9468e2bfe8fb1983!2sSaul%20Goodman&#39;s%20Office!5e0!3m2!1ses-419!2sar!4v1661779107338!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <aside class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.090008898877!2d-106.53608238136!3d35.12942731394678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87189fe2e42a10a7%3A0x9468e2bfe8fb1983!2sSaul%20Goodman&#39;s%20Office!5e0!3m2!1ses-419!2sar!4v1664831921853!5m2!1ses-419!2sar" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </aside>
-    <div>
-        <ul>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </ul>
-    </div>
+    <section>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank"class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://ar.linkedin.com" target="_blank"class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://web.whatsapp.com" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>    
+    </section>
     <!--Aca comienza el pie de pagina-->
     <footer>
-        Desarrollado por Tilingo*Todos los derechos reservados
+        
+      <h4>Developed by Tilingo©Todos los derechos reservados</h4>
+       
     </footer>
+    
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

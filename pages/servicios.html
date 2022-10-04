@@ -11,63 +11,77 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/26c37af5fd.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../img/logobarra.jpg" type="image/x-icon">
-    <title>Servicio</title>
+    <title>Servicios</title>
 </head>
 <body>
+  <div class="area">
     <header>
-        <img class="logo" src="../img/logo reducido (4).jpg" alt="logo-focus">
-        <h1 class="titulo">Focus.</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li> <a href="quienes-somos.html">Nosotros</a></li>
-                <li> <a href="eventos.html">Eventos</a> </li>
-                <li> <a href="contacto.html">Contacto</a> </li>
-            </ul>
-        </nav>
-        </header>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../img/logo princi (6).jpg" alt="Logo-Focus">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="quienes-somos.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="eventos.html">Eventos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     <!--Comienzo del main con lista de servicios de la consultora-->        
-    <main>
-
-        <div>
-            <h2>Nuestros Servicios</h2>
-            <ol>
-                <li>Psicotecnicos</li>
-                <li>Elaboracion de CVs</li>
-                <li>Psicotecnicos</li>
-                <li>Elaboracion de CVs</li>
-                <li>Psicotecnicos</li>
-                <li>Elaboracion de CVs</li>
-                <li>Psicotecnicos</li>
-                <li>Elaboracion de CVs</li>
-            </ol>
-            
-        </div>
-
+    <main class="main-servicios">
+        <h1>Nuestros Servicios</h1>
+        <div class="container-fluid">
+            <ul class="row">
+                <li class="col-xl-1">Psicotecnicos</li>
+                <li class="col-xl-2">Selección de currículums</li>
+                <li class="col-xl-1">Examenes Preocupacionales</li>
+                <li class="col-xl-2">Asesoramientos</li>
+                <li class="col-xl-2">Reclutamiento IT</li>
+                <li class="col-xl-1">Evaluación de candidatos</li>
+                <li class="col-xl-2">Relevo exhaustivo del perfil a reclutar</li>
+                <li class="col-xl-1">Presentación al cliente</li>
+            </ul>
+        </div>    
     </main>
     <!--aca comienza el aside que tiene una imagen alusiva a los servicios que se brindan-->
-    <aside>
-
-      <img src="../img/imagenServicios.jpg" alt="imagen-de-servicios">
-        
+    <aside class="aside-servicios">    
     </aside>
     <!--Comienzo de la caja de Redes Sociales-->
-    <div>
-        <ul>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </ul>
-    </div>
+    <section>
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank"class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://ar.linkedin.com" target="_blank"class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://web.whatsapp.com" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+    </ul>
+  </section>
     <!--Comienzo del Footer-->
     <footer>
-        Desarrollado por Tilingo*Todos los derechos reservados
-    </footer>
+      <h4>Developed by Tilingo©Todos los derechos reservados</h4>  
+   </footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    
+</div>
 </body>
 </html>
