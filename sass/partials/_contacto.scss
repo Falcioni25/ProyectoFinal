@@ -1,11 +1,14 @@
 /*Estilos de Contacto*/
 .area{
 .main-contacto{
+    
     grid-area: main;
     @include display-mobile;
     flex-shrink: 1;
     background-image: url(../../img/fondotexturado.jpg);
     h1{
+    padding: 0.5px;    
+    text-decoration: underline;
     color:nth($colores, 1 );    
     font-size: $medida-titulo;
     text-shadow:$shadow;
@@ -17,13 +20,29 @@
         padding: 1rem;
         margin-top: 3rem;
         margin-left: 2rem;
+        .boton{
+            border: none;
+            border-radius: 20% 0%;
+            &:hover{
+                transform: scale(1.1);
+                background-color:nth($colores,3 );
+            }
+        }
+        
     }
+
+}
+aside{
+    background-color: nth($colores, 2 ); 
 }
 
 .mapa{
     overflow:hidden;
     grid-area: aside;
-    flex-shrink: 2; 
+    flex-shrink: 2;
+    border-radius: 20px;
+    height: 400px;
+    
 }
 }
 /*Estilo de Contacto Mobile*/
@@ -32,10 +51,14 @@
         @include display-mobile;
         form{
             @include display-mobile;
+            }
         }
-    }
+    
    .mapa{
     overflow:hidden;
-    background-color: nth($colores, 1 );
-   } 
-}
+    height: 200px;
+   }
+}   
+
+   
+

@@ -39,9 +39,14 @@ header{
         margin-left: 10px;
         margin-top: 10px;
         border-radius: 50% 120%;
-    }
+    
    
-    .navbar{
+    }
+    .navbar-expand-lg{
+        width: 100%;
+        position: absolute;
+        margin-top: -20px;
+        border-radius: 10px;
         .container-fluid{
             .collapse{
                 .nav-item{
@@ -54,6 +59,10 @@ header{
         }
     }
     }
+.color-menu-responsive{
+    background-color: nth($colores, 3 );
+}
+
 
 
 
@@ -150,6 +159,18 @@ footer{
         height: 100vh;
         @include display-mobile;
         align-content: center;
+    }
+    main{
+        margin-top: 80px;
+        padding-top: 10px;
+        grid-area: main;
+        display: grid;
+        background-color: nth($colores,2);
+        justify-content: center;
+        p{
+            padding-left: 15px;
+            padding-bottom: 40px;
+        }
     }
    
     section ul li a i{

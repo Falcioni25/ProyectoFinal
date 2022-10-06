@@ -1,5 +1,6 @@
 
 /*Estilos de quienes somos*/
+
 .main-quienesSomos{
     background-image: url(../img/austin-distel-gUIJ0YszPig-azul.jpg);
     @extend %cover;
@@ -27,20 +28,44 @@
     .main-quienesSomos{
         display: none;
     }
+    .navbar-expand-lg{
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+        margin-top: -20px;
+        .container-fluid{
+            .collapse{
+                .nav-item{
+                    .nav-link:hover{
+                        color: nth($colores,1);
+                        text-shadow: 1px 1px 1px nth($colores,4 );
+                    }            
+                }
+            }
+        }
+    }
     .main-quienes-somos-responsive{
+        
         @include display-mobile;
         background-color: nth($colores,2);
+        margin-top: 80px;
+        padding-top: 10px;
+        grid-area: main;
+        background-color: nth($colores,2);
+        
         img{
             width: 100%;
-            padding: 5px;
+            padding: 5px 5px;
         }
         .cards-quienes-somos-responsive{
             @include display-mobile;
+            align-items: center;
             p{
-                padding: 15px;
+                padding: 5px 15px;
             }
             .card{
-                margin: 25px 0px;
+                margin: 20px 20px;
+                
             }   
         } 
     }

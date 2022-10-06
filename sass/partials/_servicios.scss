@@ -1,41 +1,68 @@
 
 /*estilos de servicios*/
-  
+.area{
+    height: 100vh;
+
+ 
 .main-servicios{
-    flex-shrink: 1;
+    flex-shrink: 2;
     @include display-mobile;
     font-size: 1rem;
     h1{
+        margin-top: 100px;
         text-align: center;
         font-size: $medida-titulo;
         text-shadow:$shadow;
     }
-    ul li{
+    ul{ 
+        gap:-10px;   
+        li{
+         
         padding: 0.2rem;
-        margin-right: 380px;
-        
+        margin-right: 360px;
     }
 }
-
+}
 .aside-servicios{
     @extend %cover;
-    background-image:url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
-    flex-shrink: 2;
+    background-image: url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
+    flex-shrink: 1;
 
 }
-
+}
 
 /*Estilo de  Servicios Mobile*/
 @media screen and (max-width:600px){
 .main-servicios{
     @include display-mobile;
-    flex-basis: 700px;
     background-color:nth($colores, 2 );
 
-    h1,li{
+    h1{
         text-shadow: $shadow black;
         color: nth($colores, 1 );
+        text-align: center;
+        list-style: none;
+
     }   
     }
+
 }
+@media screen and (min-width:1px) and (max-width:1199px){
+  
+    h1{
+        text-shadow: $shadow black;
+        margin-bottom: 90px;
+        text-align: center;
+
+    }
+    ul{
+     align-content: center;
+     margin-bottom: 90px;
+    li{
+        text-align: center;
+        list-style: none;
+    }
+    }
+}
+
 

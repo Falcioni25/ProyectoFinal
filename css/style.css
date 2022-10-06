@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-.aside-home, .main-quienesSomos, .aside-servicios {
+.aside-home, .main-quienesSomos, .area .aside-servicios {
   display: grid;
   background-size: cover; }
 
@@ -72,22 +72,35 @@
     display: none; }
   .main-quienesSomos {
     display: none; }
+  .navbar-expand-lg {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    margin-top: -20px; }
+    .navbar-expand-lg .container-fluid .collapse .nav-item .nav-link:hover {
+      color: #c2c2c2;
+      text-shadow: 1px 1px 1px #1f1b1b; }
   .main-quienes-somos-responsive {
     display: flex;
     flex-direction: column;
     align-content: center;
+    background-color: #547480;
+    margin-top: 80px;
+    padding-top: 10px;
+    grid-area: main;
     background-color: #547480; }
     .main-quienes-somos-responsive img {
       width: 100%;
-      padding: 5px; }
+      padding: 5px 5px; }
     .main-quienes-somos-responsive .cards-quienes-somos-responsive {
       display: flex;
       flex-direction: column;
-      align-content: center; }
+      align-content: center;
+      align-items: center; }
       .main-quienes-somos-responsive .cards-quienes-somos-responsive p {
-        padding: 15px; }
+        padding: 5px 15px; }
       .main-quienes-somos-responsive .cards-quienes-somos-responsive .card {
-        margin: 25px 0px; } }
+        margin: 20px 20px; } }
 
 /*Estilos de Redes Mobile*/
 section ul li a i {
@@ -112,23 +125,27 @@ section ul li a i {
   color: #c4302b; }
 
 /*estilos de servicios*/
-.main-servicios {
-  flex-shrink: 1;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  font-size: 1rem; }
-  .main-servicios h1 {
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px; }
-  .main-servicios ul li {
-    padding: 0.2rem;
-    margin-right: 380px; }
-
-.aside-servicios {
-  background-image: url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
-  flex-shrink: 2; }
+.area {
+  height: 100vh; }
+  .area .main-servicios {
+    flex-shrink: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 1rem; }
+    .area .main-servicios h1 {
+      margin-top: 100px;
+      text-align: center;
+      font-size: 2rem;
+      text-shadow: 1px 1px 1px; }
+    .area .main-servicios ul {
+      gap: -10px; }
+      .area .main-servicios ul li {
+        padding: 0.2rem;
+        margin-right: 360px; }
+  .area .aside-servicios {
+    background-image: url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
+    flex-shrink: 1; }
 
 /*Estilo de  Servicios Mobile*/
 @media screen and (max-width: 600px) {
@@ -136,11 +153,24 @@ section ul li a i {
     display: flex;
     flex-direction: column;
     align-content: center;
-    flex-basis: 700px;
     background-color: #547480; }
-    .main-servicios h1, .main-servicios li {
+    .main-servicios h1 {
       text-shadow: 1px 1px 1px black;
-      color: #c2c2c2; } }
+      color: #c2c2c2;
+      text-align: center;
+      list-style: none; } }
+
+@media screen and (min-width: 1px) and (max-width: 1199px) {
+  h1 {
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 90px;
+    text-align: center; }
+  ul {
+    align-content: center;
+    margin-bottom: 90px; }
+    ul li {
+      text-align: center;
+      list-style: none; } }
 
 /*Estilos de Eventos*/
 .area-dos {
@@ -169,6 +199,7 @@ footer {
   grid-area: footer; }
 
 .main-eventos {
+  padding-top: 90px;
   justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +211,7 @@ footer {
     font-style: "Lato";
     padding: 0; }
   .main-eventos img {
-    width: 325px;
+    width: 300px;
     height: 200px;
     border: 1px solid #c2c2c2;
     margin: 5px 5px; }
@@ -209,6 +240,8 @@ footer {
   flex-shrink: 1;
   background-image: url(../../img/fondotexturado.jpg); }
   .area .main-contacto h1 {
+    padding: 0.5px;
+    text-decoration: underline;
     color: #c2c2c2;
     font-size: 2rem;
     text-shadow: 1px 1px 1px;
@@ -219,11 +252,22 @@ footer {
     padding: 1rem;
     margin-top: 3rem;
     margin-left: 2rem; }
+    .area .main-contacto form .boton {
+      border: none;
+      border-radius: 20% 0%; }
+      .area .main-contacto form .boton:hover {
+        transform: scale(1.1);
+        background-color: #D27355; }
+
+.area aside {
+  background-color: #547480; }
 
 .area .mapa {
   overflow: hidden;
   grid-area: aside;
-  flex-shrink: 2; }
+  flex-shrink: 2;
+  border-radius: 20px;
+  height: 400px; }
 
 /*Estilo de Contacto Mobile*/
 @media screen and (max-width: 600px) {
@@ -237,7 +281,7 @@ footer {
       align-content: center; }
   .mapa {
     overflow: hidden;
-    background-color: #c2c2c2; } }
+    height: 200px; } }
 
 body {
   font-family: "Lato"; }
@@ -263,9 +307,17 @@ header {
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 50% 120%; }
-  header .navbar .container-fluid .collapse .nav-item .nav-link:hover {
-    color: #c2c2c2;
-    text-shadow: 1px 1px 1px #1f1b1b; }
+  header .navbar-expand-lg {
+    width: 100%;
+    position: absolute;
+    margin-top: -20px;
+    border-radius: 10px; }
+    header .navbar-expand-lg .container-fluid .collapse .nav-item .nav-link:hover {
+      color: #c2c2c2;
+      text-shadow: 1px 1px 1px #1f1b1b; }
+
+.color-menu-responsive {
+  background-color: #D27355; }
 
 /*Estilos del Main*/
 main {
@@ -351,6 +403,16 @@ footer {
     flex-direction: column;
     align-content: center;
     align-content: center; }
+  main {
+    margin-top: 80px;
+    padding-top: 10px;
+    grid-area: main;
+    display: grid;
+    background-color: #547480;
+    justify-content: center; }
+    main p {
+      padding-left: 15px;
+      padding-bottom: 40px; }
   section ul li a i {
     animation: none;
     justify-content: center; }
