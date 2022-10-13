@@ -2,14 +2,20 @@
 .main-home{
     background-color: nth($colores, 2 );
     .container-fluid{
-        .row{
-            margin-top: 5rem;
-        }
         h1{
             text-align: center;
             font-size: $medida-titulo;
             text-shadow: $shadow;
         }
+        .row{
+            margin-top: 4rem;
+            p{
+              padding: 2rem;
+            }
+            
+        }
+        
+
 }
 }
 .aside-home{
