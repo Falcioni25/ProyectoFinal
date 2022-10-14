@@ -1,11 +1,14 @@
 /*Estilos de Contacto*/
 .area{
-.main-contacto{
+
+    opacity: 1;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #547480 10px ), repeating-linear-gradient( #444cf755, #547480 );
     
+    .main-contacto{
+    opacity: 1;
     grid-area: main;
     @include display-mobile;
     flex-shrink: 1;
-    background-image: url(../../img/fondotexturado.jpg);
     h1{
     padding: 0.5px;    
     text-decoration: underline;
@@ -20,20 +23,21 @@
             text-align: center;
             margin-bottom: 2rem;
         }
-        background-color: nth($colores, 2 ); ;
-        opacity: 0.5;
+        background-color: nth($colores, 2 );
+        box-shadow: $shadow black;
         color:nth($colores, 1 );  
         padding: 1rem;
         margin-top: 3rem;
         margin-left: 2rem;
-        border-radius: 5%;
+        border-radius: 5% 0 5% 0;
+        border: solid;
         div{
             margin:1rem;
         }
         .boton{
             width: 90px;
             margin-left:100px; 
-            border: none;
+            border: double;
             &:hover{
                 transform: scale(1.1);
                 background-color:nth($colores,3 );
@@ -41,12 +45,7 @@
         }
         
     }
-
 }
-aside{
-    background-color: nth($colores, 2 ); 
-}
-
 .mapa{
     overflow:hidden;
     grid-area: aside;
@@ -58,6 +57,21 @@ aside{
 }
 /*Estilo de Contacto Mobile*/
 @media screen and (max-width:600px){
+    .navbar-expand-lg{
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+        margin-top: -20px;
+        .container-fluid{
+            .collapse{
+                .nav-item{
+                    .nav-link:hover{
+                        color: nth($colores,1);
+                        text-shadow: 1px 1px 1px nth($colores,4 );
+                    }            
+                }
+            }
+        }
     .main-contacto{
         @include display-mobile;
         form{
@@ -69,6 +83,8 @@ aside{
     overflow:hidden;
     height: 200px;
    }
+}
+
 }   
 
    

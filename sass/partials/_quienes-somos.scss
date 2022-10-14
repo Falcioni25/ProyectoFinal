@@ -9,8 +9,7 @@
     display: none;
 }
 .aside-QuienesSomos{
-    display: grid;
-    justify-items: center;
+    @include display-mobile;
     background-color: nth($colores, 2 );
     h1{
         padding-top: 10px;
@@ -63,7 +62,7 @@
             @include display-mobile;
             align-items: center;
             p{
-                padding: 5px 15px;
+                padding: 5px 45px;
             }
             .card{
                 margin: 20px 20px;

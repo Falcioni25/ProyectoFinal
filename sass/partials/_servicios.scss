@@ -5,7 +5,7 @@
 
 .main-servicios{
     opacity: 1;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #547480 10px ), repeating-linear-gradient( #444cf755, #547480 );;
+    background-image:repeating-radial-gradient( circle at 0 0, transparent 0, #547480 10px ), repeating-linear-gradient( #444cf755, #547480 );
     .container-fluid{
     @include display-mobile;
     font-size: 1rem;
@@ -52,7 +52,24 @@
     }
 
 }
-@media screen and (min-width:601px) and (max-width:1199px){
+.navbar-expand-lg{
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    margin-top: -20px;
+    .container-fluid{
+        .collapse{
+            .nav-item{
+                .nav-link:hover{
+                    color: nth($colores,1);
+                    text-shadow: 1px 1px 1px nth($colores,4 );
+                }            
+            }
+        }
+    }
+}
+/*
+@media screen and (max-width:601px) and (max-width:1199px){
   
     h1{
         text-shadow: $shadow black;
@@ -67,5 +84,5 @@
     }
     }
 }
-
+*/
 
