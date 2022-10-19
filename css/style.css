@@ -179,6 +179,56 @@ section ul li a i {
     color: #c2c2c2;
     text-shadow: 1px 1px 1px #1f1b1b; }
 
+/*estilos de servicios*/
+.area {
+  height: 100vh; }
+  .area .main-servicios {
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #547480 10px), repeating-linear-gradient(#444cf755, #547480); }
+    .area .main-servicios .container-fluid {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      font-size: 1rem; }
+      .area .main-servicios .container-fluid h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px; }
+      .area .main-servicios .container-fluid .row {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        font-weight: bold;
+        color: black; }
+        .area .main-servicios .container-fluid .row li {
+          padding: 0.5rem; }
+  .area .aside-servicios {
+    background-image: url(../../img/alvaro-reyes-qWwpHwip31M-unsplash.jpg);
+    flex-shrink: 1; }
+
+/*Estilo de  Servicios Mobile*/
+@media screen and (max-width: 600px) {
+  .main-servicios {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #547480; }
+    .main-servicios h1 {
+      text-shadow: 1px 1px 1px black;
+      color: #c2c2c2;
+      text-align: center;
+      list-style: none; } }
+
+.navbar-expand-lg {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  margin-top: -20px; }
+  .navbar-expand-lg .container-fluid .collapse .nav-item .nav-link:hover {
+    color: #c2c2c2;
+    text-shadow: 1px 1px 1px #1f1b1b; }
+
 /*Estilos de Eventos*/
 .area-dos {
   display: grid;
