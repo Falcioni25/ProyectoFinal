@@ -14,16 +14,12 @@
             }
             
         }
-        
-
 }
 }
 .aside-home{
     @extend %cover;
     background-image: url(../img/business-people-meeting-celeste.jpg);
 }
-
-
 /*Estilos del Home Mobile*/
 @media screen and (max-width:600px){ 
 .main-home{
@@ -34,8 +30,8 @@
    
 }
 }
-/*Estilos de Redes Mobile*/
-              
+
+/*Estilos de Redes Mobile*/             
     .facebook{
         color:#3b5998;
     }
